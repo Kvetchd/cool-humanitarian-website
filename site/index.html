@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello Coursera!</title>
+		<title>Video test</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script type="text/javascript">
+		var flashvars = {};
+		var params = {movie:"puppy.flv"};
+		swfobject.embedSWF("osplayer.swf", "snow", "400", "320", "8.0.0", flashvars, params);
+	</script>
 	</head>
 	<body>
-		<h1>Hello Coursera! It's great to be here.</h1>
+		<div id="snow">
+			<p>Puppy rolling in the snow</p>
+		</div>
 	</body>
 </html>
