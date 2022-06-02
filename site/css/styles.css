@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'fondamentoitalic';
+    src: url('fondamento-italic-webfont.woff2') format('woff2'),
+         url('fondamento-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_serifregular';
+    src: url('ptserif-regular-webfont.woff2') format('woff2'),
+         url('ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body::before {
+	display: block;
+	content: '';
+	height: 60px;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #666;
+	background-color: white;
+	line-height: 1.7em;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+}
+
+.text-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.text-link:hover, .text-link:active {
+	text-decoration: underline;
+	color: inherit;
+}
+
+#header-nav {
+	background-color: #fff;
+	border-radius: 0;
+	border: 0;
+}
+
+/*
+.navbar-brand {
+	padding-top: 25px;
+}
+*/
+
+.navbar-brand h1 {
+	font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+	color: #87ceeb; 
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 5px; /* separar del logo */
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+	text-decoration: none;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link, .dropdown-item {
+	font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+	text-transform: uppercase;
+	color: #5b5654;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav-link, .dropdown-item {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 767px) {
+	.nav-link, .dropdown-item {
+		font-size: 14px;
+	}
+}
+
+.navbar-nav button {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+#jumbotron {
+	background-image: url('../images/_D7D0050.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	opacity: 1;
+}
+
+#jumbotron .container-fluid {
+	line-height: 20px;
+}
+
+#jumbotron h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	color: black;
+	font-weight: 700;
+}
+
+#jumbotron h2 {
+	font-size: 30px;
+	color: black;
+	text-transform: none;
+	font-weight: 100;
+}
+
+#jumbotron button {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 0;
+	border-color: black;
+	border-width: 2px;
+}
+
+h2 {
+	font-size: 40px;
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 20px;
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#quote {
+	background-color: #d0d0d0;
+	font-family: 'fondamentoitalic';
+}
+
+.card-header {
+	background-color: #87ceeb;
+}
+
+#footer-col1 {
+	line-height: 4px;
+}
+
+#footer-col2 {
+	line-height: 10px;
+	text-align: center;
+}
+
+#footer-col3 {
+	line-height: 4px;
+}
+
+#legal {
+	font-size: 14px;
+}
+
+.bi-instagram:hover {
+	 color: transparent;
+	 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	 background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	 background-clip: text;
+	 -webkit-background-clip: text;
+}
+
+.bi-youtube:hover {
+	color: #bb0000;
+}
+
+
+@media  (max-width: 991px) {
+	#footer-col3 {
+		display: none;
+	}
+
+	#footer-col2 {
+		text-align: left;
+	}
+}
+
+#about-more p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 22px;
+}
+
+#about-quote {
+	font-family: pt_serifregular;
+	font-size: 48px;
+}

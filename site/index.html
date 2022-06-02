@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Video test</title>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-	<script type="text/javascript">
-		var flashvars = {};
-		var params = {movie:"puppy.flv"};
-		swfobject.embedSWF("osplayer.swf", "snow", "400", "320", "8.0.0", flashvars, params);
-	</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AlasCoach</title>
+		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="css/styles.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	</head>
 	<body>
-		<div id="snow">
-			<p>Puppy rolling in the snow</p>
-		</div>
+	
+		<!-- Navbar -->
+
+		<header>
+			<nav id="header-nav" class="navbar fixed-top navbar-expand-lg shadow-sm">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#" onclick="$alas.loadPage('home.html', event);">
+						<img class="d-none d-lg-inline" src="images/icons8-email-female-50.png" alt="Logo image" width="50px" height="50px">
+						<h1 class="float-end">AlasCoach</h1>
+					</a>
+					<button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse dual-collapse collapsable-nav">
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#" onclick="$alas.loadPage('coaching-personal.html', event);">Coaching personal</a></li>
+									<li><a class="dropdown-item" href="#" onclick="$alas.loadPage('coaching-organizacional.html', event);">Coaching organizacional</a></li>
+									<li><a class="dropdown-item" href="#" onclick="$alas.loadPage('coaching-corporativo.html', event);">Coaching corporativo</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" onclick="$alas.loadPage('acerca.html', event);">Acerca</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" onclick="$alas.loadPage('contacto.html', event);">Contacto</a>
+							</li>
+						</ul>
+					</div>
+					<div class="collapse navbar-collapse justify-content-end dual-collapse collapsable-nav">
+						<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+							<li class="nav-item ml-auto">
+								<button type="button" class="btn btn-info btn-sm">Agendar sesión</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div id="main-content"></div>
+
+		<!-- Footer -->
+
+	  	<section class="p-5 bg-dark">
+			<div class="container-lg">
+				<div class="row g-5">
+					<div id="footer-col2" class="col-lg-4 align-self-start order-lg-2">
+						<p class="lead text-white">Sigue a AlasCoach en:</p>
+						<a href="https://www.instagram.com/alas.coach/" target="_blank" class="text-link"><i class="h5 bi bi-instagram mx-1"></i></a>
+						<!-- <a href="#" class="text-link"><i class="h5 bi bi-youtube mx-1"></i></a> -->
+					</div>
+					<div id="footer-col1" class="col-lg-4 align-self-end order-lg-1">
+						<p class="text-white">AlasCoach&copy;</p>
+						<p id="legal"><a href="#" class="text-link">Política de privacidad</a> | <a href="#" class="text-link">Términos y condiciones</a></p>
+					</div>
+					<div id="footer-col3" class="col-lg-4 align-self-center text-end order-lg-3">
+						<p class="h6">Construido por Rodrigo Vega</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ajax-utils.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
